@@ -1,4 +1,4 @@
-var canvas = new fabric.Canvas('myCanvas');
+var canvas = new fabric.Canvas("myCanvas");
  var x= document.getElementById("myAudio");
 var block_img_object ="";
 function new_image()
@@ -10,9 +10,10 @@ function new_image()
         block_img_object.scaleToHeight(510);
         block_img_object.set({
             top:0,
-            left:0});
+            left:0
+        });
         canvas.add(block_img_object);
-    }
+    });
 }
 
 function playSound(){

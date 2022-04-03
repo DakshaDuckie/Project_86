@@ -3,7 +3,9 @@
 <head>
 	<title>Birthday wishes</title>
 <link rel="stylesheet" href="style.css">
+<audio id="myAudio" src="bdayaudio.mp3"></audio>
 <script src="fabric.js"></script>
+<script src="main.js"></script>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -12,16 +14,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </head>
-<body class="body_background" onload="new_image">
+<body class="body_background" onload="new_image()">
 	<center>
 		<br><br>
 		<!--- Create canvas --->
-		<canvas width ="600" height="400"></canvas>
+		<canvas id="myCanvas" width ="600" height="400"></canvas>
 		<br>
 		<!--- Create Bootstrap button --->
-		<button class="btn btn-warning btn-lg" onclick=playSound()>Dear friend,</button>
+		<button class="btn btn-warning btn-lg" onclick="playSound()">Happy Birthday</button>
 	</center>
-	<audio id="myAudio" src="bdayaudio.mp3"></audio>
-	<script src="main.js"></script>
 </body>
 </html>
